@@ -56,6 +56,40 @@ The slides are written in markdown and HTML, and each slide begins with a `---` 
 
 You can add specific config for each slide like class, layout, transition, etc.
 
+### Addons
+
+There are a few addons which make sense for these slides, and you include them in the presentation by adding them to the `addons` list in the [slides.md](./slides.md) frontmatter:
+
+```yaml
+addons:
+    - slidev-addons-rabbit
+```
+
+- [slidev-addon-qrcode](https://www.npmjs.com/package/slidev-addon-qrcode) - add a QR code to the slide
+***Note:*** use the `<div>` with the class to center the rendered qr code. Remove the `image="/logo.svg"` parameter if you don't want a logo in the center.
+
+```html
+<div class="flex flex-col items-center">
+    <QRCode
+        :width="100"
+        :height="100"
+        type="svg"
+        data="https://sli.dev"
+        :margin="10"
+        :imageOptions="{ margin: 10 }"
+        :dotsOptions="{ type: 'extra-rounded', color: 'purple' }"
+        image="/logo.svg"
+    />
+</div>
+```
+
+- [slidev-addon-rabbit](https://www.npmjs.com/package/slidev-addon-rabbit) - add a rabbit at the bottom of the slide which progresses from left to right according to the time you have set with the `?time=xx` with `xx` being the number of minutes for the presentation. If you want the slide number to be shown with the rabbit, add the following to the slide config frontmatter:
+
+```yaml
+rabbit:
+  slideNum: true
+```
+
 ## LICENSE
 
 MIT License

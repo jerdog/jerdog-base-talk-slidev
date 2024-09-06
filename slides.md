@@ -40,6 +40,7 @@ defaults:           # default frontmatter applies to all slides
   transition: fade  # slide transition: https://sli.dev/guide/animations.html#slide-transitions
 addons:
 #  - slidev-addon-rabbit
+#  - slidev-addon-qrcode
 #rabbit:
 #  slideNum: true
 layout: cover
@@ -47,6 +48,8 @@ transition: slide-left
 ---
 
 # Base talk slide deck
+
+
 
 <!--
 
