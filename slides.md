@@ -9,6 +9,7 @@ info: |
   ## Abstract
   <Place slide deck info or abstract here>
 conference: ""
+favicon: ''
 keywords: 
 presenter: true
 download: true
@@ -25,7 +26,6 @@ record: true
 wakeLock: build
 colorSchema: auto
 aspectRatio: 16/9
-favicon: ''
 fonts:
   sans: Roboto
   serif: Roboto Slab
