@@ -1,5 +1,6 @@
 {
   "name": "jerdog-base-talk-slidev",
+  "type": "module",
   "private": true,
   "author": "Jeremy Meiss",
   "license": "MIT",
@@ -10,11 +11,16 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.49.29",
+    "@slidev/cli": "latest",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
-    "slidev-addon-qrcode": "^1.0.2",
-    "slidev-theme-the-unnamed": "^0.0.20",
-    "vue": "^3.4.38"
+    "slidev-component-progress": "latest",
+    "slidev-theme-the-unnamed": "latest",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "playwright-chromium": "latest",
+    "prettier": "latest",
+    "prettier-plugin-slidev": "latest"
   }
 }
